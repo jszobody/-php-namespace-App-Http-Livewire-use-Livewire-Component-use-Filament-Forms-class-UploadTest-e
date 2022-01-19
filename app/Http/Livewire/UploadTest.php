@@ -17,6 +17,7 @@ class UploadTest extends Component implements Forms\Contracts\HasForms
     protected function getFormSchema(): array
     {
         return [
+            Forms\Components\TextInput::make('name'),
             Forms\Components\FileUpload::make('attachment')
         ];
     }
